@@ -69,7 +69,7 @@ export function SweepVisual() {
           <div className="px-4 py-3">
             <div className="flex items-center justify-between text-xs">
               <span className="flex items-center gap-1.5 font-semibold"><Sparkles className="size-3.5 text-primary" /> Sweep</span>
-              <span className="text-panel-muted">{cursor < INBOX.length ? `Reading ${INBOX[cursor].from}…` : "Matching rules…"}</span>
+              <span className="text-panel-muted">{cursor < INBOX.length ? `Reading ${INBOX[cursor]?.from ?? ""}…` : "Matching rules…"}</span>
             </div>
             <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-panel-raised">
               <div className="h-full rounded-full bg-primary transition-all duration-500" style={{ width: `${pct}%` }} />

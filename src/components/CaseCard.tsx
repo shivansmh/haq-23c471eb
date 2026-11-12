@@ -3,7 +3,7 @@ import { Check, ChevronDown, Copy } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { claimLabel, inr, STATUS_LABELS, type Case, type ClaimPack } from "@/lib/haq-types";
 
-export function CaseCard({ c, pack }: { c: Case; pack?: ClaimPack }) {
+export function CaseCard({ c, pack }: { c: Case; pack?: ClaimPack | undefined }) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const resolved = c.status === "resolved_on_time";

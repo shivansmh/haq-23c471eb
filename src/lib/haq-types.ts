@@ -49,7 +49,7 @@ export type SweepResult = {
   coverage?: { listed: number; triaged: number; analysed: number; relevant: number; not_analysed: number };
 };
 
-export const API_BASE = (import.meta.env.VITE_API_BASE_URL || "https://haq-api-u3pz.onrender.com").replace(/\/$/, "");
+export const API_BASE = (import.meta.env["VITE_API_BASE_URL"] || "https://haq-api-u3pz.onrender.com").replace(/\/$/, "");
 
 export const inr = (paise?: number | null) =>
   paise == null ? "—" : new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(paise / 100);

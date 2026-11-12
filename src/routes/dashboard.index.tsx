@@ -54,7 +54,7 @@ function Start() {
       <div className="my-8 flex items-center gap-4 text-xs text-muted-foreground"><span className="h-px flex-1 bg-border" />OR<span className="h-px flex-1 bg-border" /></div>
       <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-border bg-card p-5">
         <div className="flex items-center gap-3"><ClipboardList className="size-5 text-muted-foreground" /><div><p className="font-semibold">Manual claim</p><p className="text-xs text-muted-foreground">No email access · enter the details yourself</p></div></div>
-        <Link to="/dashboard/claims" search={{ manual: true }} className="rounded-lg border border-border px-4 py-2 text-sm font-semibold hover:bg-secondary">Continue manually</Link>
+        <Link to="/dashboard/claims" className="rounded-lg border border-border px-4 py-2 text-sm font-semibold hover:bg-secondary">Continue manually</Link>
       </div>
     </div>
   );
